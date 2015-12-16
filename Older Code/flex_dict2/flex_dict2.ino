@@ -1,17 +1,20 @@
-const int flexpin1 = 0; 
-const int flexpin2 = 2; 
-const int flexpin3 = 3; 
-const int flexpin4 = 4; 
-const int flexpin5 = 5; 
-int Matrix[3][5] = { {777 ,777,777,777, 777},
-                    {820,820,820,820, 820},
-                    {860,860,860,860, 860}
+const int flexpin1 = A1; // thumb
+const int flexpin2 = A2; // index
+const int flexpin3 = A3; // the bird
+const int flexpin4 = A4; // ring
+const int flexpin5 = A5; // pinky
+int Matrix[3][5] = { {675, 686, 650, 660, 700},    //open
+                     {660, 640, 585, 580, 620},    // bent 
+                     {630, 554, 477, 520, 530}     // closed
                      };
 
 //int flexposition[] =  {600, 600, 600, 600, 600};
-int tolerance = 5;    
-long unsigned flex;
-
+int tolerance = 10;    
+long unsigned flex1;
+long unsigned flex2;
+long unsigned flex3;
+long unsigned flex4;
+long unsigned flex5;
                 
 void setup() {
   // put your setup code here, to run once:
